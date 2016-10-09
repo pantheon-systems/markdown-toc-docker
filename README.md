@@ -27,3 +27,9 @@ Use as a Makefile task `readme-toc`:
 
     readme-toc: ## update the Table of Contents in ./README.md
         docker run --rm -v `pwd`:/src quay.io/getpantheon/markdown-toc -i /src/README.md
+
+Workflow:
+
+    $ vim README.md
+    $ make readme-toc
+    $ git commit README.md
