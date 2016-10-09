@@ -16,20 +16,14 @@ to install node.js or npm.
 Basic Usage
 -----------
 
-Run markdown-toc on `./README.md`:
+Run markdown-toc on `./README.md` (edits in place):
 
     $ docker run -v `pwd`:/src quay.io/getpantheon/markdown-toc -i /src/README.md
-
 
 Makefile Usage
 --------------
 
-Here is an example make task named `readme-toc` that you can use in a project to
-update the TOC in `./README.md`:
-
-    # Makefile:
+Use as a Makefile task `readme-toc`:
 
     readme-toc: ## update the Table of Contents in ./README.md
         docker run --rm -v `pwd`:/src quay.io/getpantheon/markdown-toc -i /src/README.md
-
-Run `make readme-toc` to update the README.md's table of contents.
