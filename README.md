@@ -5,6 +5,7 @@ markdown-toc-docker
 
 - [Basic Usage](#basic-usage)
 - [Makefile Usage](#makefile-usage)
+- [Building](#building)
 
 <!-- tocstop -->
 
@@ -33,3 +34,10 @@ Workflow:
     $ vim README.md
     $ make readme-toc
     $ git commit README.md
+
+Building
+--------
+
+There is no make task for building the docker container because this repo is
+setup to auto-build on quay.io whenever a new branch is pushed to Github.
+See here: https://quay.io/repository/getpantheon/markdown-toc
